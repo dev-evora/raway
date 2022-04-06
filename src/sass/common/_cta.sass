@@ -1,0 +1,41 @@
+.cta
+  &-block
+    max-width: 1060px
+    width: 100%
+    margin: 0 auto
+    border-radius: 129px 20px 20px 20px
+    background: url(../img/svg/cta-1.svg) no-repeat left bottom, url(../img/svg/cta-2.svg) no-repeat top right, rgba(137, 137, 137, 0.2)
+    padding: 60px 60px 30px
+    h2
+      text-align: center
+      font-size: 33px
+      font-family: 'Montserrat'
+      font-weight: 700
+    h3
+      font-size: 16px
+      font-weight: 400
+      text-align: center
+      margin-top: 10px
+    form
+      @include flexbox
+      align-items: center
+      justify-content: space-between
+      margin-top: 40px
+    .input, .btn
+      width: calc(100% / 3 - 20px)
+      margin-bottom: 20px
+    .checkbox
+      margin-left: auto
+      margin-top: 0
+    &__item
+      padding: 60px
+      @include flexbox
+      align-items: center
+      justify-content: space-between
+      h2, h3
+        text-align: left
+      .btn
+        width: 200px
+        margin: 0
+    &__wrap
+      flex: 1

@@ -1,0 +1,29 @@
+.euro
+  .row
+    align-items: center
+    margin-top: 140px
+  &-text
+    width: 400px
+    margin-left: 80px
+    font-size: 16px
+    p
+      margin-top: 15px
+      &:first-child
+        margin-top: 0
+  &-img
+    width: calc(100% - 400px - 80px - 65px)
+    margin-left: 65px
+    position: relative
+    &::before
+      content: ''
+      margin-left: 100px
+      height: 315px
+      border-radius: 315px
+      background: #eaeaea
+      width: 2000px
+      display: block
+    img
+      position: absolute
+      top: -60px
+      left: 0
+      max-width: initial

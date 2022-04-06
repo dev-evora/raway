@@ -1,0 +1,29 @@
+.header
+  .row
+    align-items: center
+    justify-content: space-between
+  &-top
+    color: #fff
+    padding: 10px 0
+    background: #b0b0ae
+    &__item
+      @include flexbox
+      align-items: center
+      img
+        margin-right: 10px
+      p
+        flex: 1
+  &-bottom
+    padding: 10px 0
+  &-menu
+    @include flexbox
+    align-items: center
+    color: #000
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 700
+    font-family: 'Montserrat'
+    li
+      margin: 0 20px
+  &-logo
+    width: 200px

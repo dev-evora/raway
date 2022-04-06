@@ -1,0 +1,245 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Главная' %}
+
+{% block content %}
+
+<section class="promo">
+  <div class="container">
+    <div class="row">
+      <div class="promo-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/promo-slider.jpg" alt="">
+            <p>Низкотемпературный Воздушный Тепловой насос</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/promo-slider.jpg" alt="">
+            <p>Низкотемпературный Воздушный Тепловой насос</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/promo-slider.jpg" alt="">
+            <p>Низкотемпературный Воздушный Тепловой насос</p>
+          </div>
+        </div>
+        <div class="promo-pagination"></div>
+      </div>
+      <div class="promo-content">
+        <h1 class="title">энергосберегающие отопительные системы РАВЭЙ</h1>
+        <ul class="list">
+          <li>
+            <img src="img/svg/promo-1.svg" alt="">
+            <p>Экологичное тепловое оборудование</p>
+          </li>
+          <li>
+            <img src="img/svg/promo-2.svg" alt="">
+            <p>Решение под ключ: позведем расчет, изготовим оборудование, установим систему отопления</p>
+          </li>
+          <li>
+            <img src="img/svg/promo-3.svg" alt="">
+            <p>Техническая поддержка в процессе эксплуатации</p>
+          </li>
+          <li>
+            <img src="img/svg/promo-4.svg" alt="">
+            <p>Можно использовать в бытовых<br> и промышленных целях</p>
+          </li>
+        </ul>
+        <div class="btn-wrap">
+          <a href="javascript:;" data-fancybox data-src="#popup-help" class="btn btn-confetti">ПОДОБРАТЬ РЕШЕНИЕ</a>
+          <a href="#" class="btn">ПЕРЕЙТИ В КАТАЛОГ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section know">
+  <div class="container">
+    <div class="section-top">
+      <h2 class="title">Что нужно знать о продукции РАВЭЙ</h2>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+    </div>
+    <div class="row row-gap">
+      <div class="know-item">
+        <div class="know-icon"><img src="img/svg/know-1.svg" alt=""></div>
+        <div class="know-text">
+          <h4>Отопительная система - это</h4>
+          <p>Отопление помещения<br> Подогрев и очистка воды <br>Кондиционирование помещений</p>
+        </div>
+      </div>
+      <div class="know-item">
+        <div class="know-icon"><img src="img/svg/know-2.svg" alt=""></div>
+        <div class="know-text">
+          <h4>Безопасное использование</h4>
+          <p>Тепловые насосы и солнечные коллекторы не требуют особых мер предосторожности</p>
+        </div>
+      </div>
+      <div class="know-item">
+        <div class="know-icon"><img src="img/svg/know-3.svg" alt=""></div>
+        <div class="know-text">
+          <h4>Удаленное управление</h4>
+          <p>Управляйте температурой в помещении, даже если находитесь за сотни километров</p>
+        </div>
+      </div>
+      <div class="know-item">
+        <div class="know-icon"><img src="img/svg/know-4.svg" alt=""></div>
+        <div class="know-text">
+          <h4>Экономия средств</h4>
+          <p>Наши отопительные системы в процессе эксплуатации экономят ресурсы и окупаются в среднем за 5 лет</p>
+        </div>
+      </div>
+      <div class="know-item">
+        <div class="know-icon"><img src="img/svg/know-5.svg" alt=""></div>
+        <div class="know-text">
+          <h4>Отопительная система - это</h4>
+          <p>Подберем оборудование и комплектующие. Доставим, установим и проведем пусконаладку оборудования на месте</p>
+        </div>
+      </div>
+      <div class="know-item">
+        <div class="know-icon"><img src="img/svg/know-6.svg" alt=""></div>
+        <div class="know-text">
+          <h4>Отопительная система - это</h4>
+          <p>Тихая работа без дыма, грязи и лишних запахов. Генерация, накопление и преобразование энергии окружающей среды и солнечной энергии</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section build">
+  <div class="container">
+    <div class="section-top">
+      <h2 class="title">Строите завод, коттеджный поселок, эко-ферму или дом?</h2>
+      <h3>Подберём оборудование, которое вам подойдет. Учтём размеры и тип помещения. Дадим рекомендации по теплоизоляции дома. Оставьте заявку, мы перезвоним вам в течение 30 минут и ответим на все вопросы</h3>
+    </div>
+    {% set form_btn = 'Помочь в выбором' %}
+    {% include 'common/big-form.html' %}
+  </div>
+</section>
+
+<section class="section best">
+  <div class="container">
+    <div class="section-top">
+      <h2 class="title">Лучший выбор - система отопления последнего поколения</h2>
+    </div>
+    <div class="row">
+      <img src="img/best.jpg" alt="" class="best-img">
+      <div class="best-content">
+        <h3 class="title-sm">Низкотемпературный воздушный тепловой насос НВТН 20</h3>
+        <ul class="list">
+          <li>
+            <img src="img/svg/best-1.svg" alt="">
+            <p>Не требует бурения скважин</p>
+          </li>
+          <li>
+            <img src="img/svg/best-2.svg" alt="">
+            <p>Работа без потери тепловой мощности до -30°С </p>
+          </li>
+          <li>
+            <img src="img/svg/best-3.svg" alt="">
+            <p>Площадь обогрева от 200 м²</p>
+          </li>
+          <li>
+            <img src="img/svg/best-4.svg" alt="">
+            <p>Управление через интернет</p>
+          </li>
+          <li>
+            <img src="img/svg/best-5.svg" alt="">
+            <p>Запатентованная разработка</p>
+          </li>
+        </ul>
+        <div class="btn-wrap"><a href="#" class="btn btn-confetti">Подробнее о товаре</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section confident">
+  <div class="container">
+    <div class="section-top">
+      <h2 class="title">Мы уверены в нашей продукции, поэтому сами используем ее</h2>
+    </div>
+    <div class="confident-slider__block">
+      <div class="confident-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/confident.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/confident.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/confident.jpg" alt=""></div>
+        </div>
+        <div class="confident-pagination"></div>
+      </div>
+    </div>
+    <div class="confident-content">
+      <p>Одним из первых реализованных проектов Компании «Силагнис» стала котельная собственного завода. </p>
+      <p>Проект котельной включал в себя установку трех геотермальных тепловых насосов по 30 кВт тепловой энергии каждый, обустройство 18 скважин по 100 метров глубиной, установку двух баков накопителей тепла и холода соответственно, монтаж системы ГВС на базе тепловых насосов и солнечных коллекторов, обустройство тёплых полов и обвязку всей системы. </p>
+      <p>С помощью насосов в здании поддерживается система отопления, горячее водоснабжение,  система кондиционирования  в теплое время года.</p>
+      <div class="btn-wrap"><a href="javascript:;" data-fancybox data-src="#popup-excursion" class="btn btn-xl btn-confetti">прийти к нам экскурсию</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="confident-numbers">
+  <div class="container">
+    <div class="row">
+      <div class="confident-numbers__item">
+        <h2>3</h2>
+        <h3>по 30 квт</h3>
+        <p>геотермальных тепловых насоса</p>
+      </div>
+      <div class="confident-numbers__item">
+        <h2>1500</h2>
+        <h3>по 30 квт</h3>
+        <p>геотермальных тепловых насоса</p>
+      </div>
+      <div class="confident-numbers__item">
+        <h2>24</h2>
+        <h3>по 30 квт</h3>
+        <p>геотермальных тепловых насоса</p>
+      </div>
+      <div class="confident-numbers__item">
+        <h2>36</h2>
+        <h3>по 30 квт</h3>
+        <p>геотермальных тепловых насоса</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section system">
+  <div class="container">
+    <div class="section-top">
+      <h2 class="title">Использование систем отопления РАВЭЙ</h2>
+    </div>
+    <div class="carousel system-carousel">
+      <div class="carousel-arrow carousel-prev system-carousel__prev"></div>
+      <div class="carousel-arrow carousel-next system-carousel__next"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">{% include 'common/system-item.html' %}</div>
+        <div class="swiper-slide">{% include 'common/system-item.html' %}</div>
+        <div class="swiper-slide">{% include 'common/system-item.html' %}</div>
+        <div class="swiper-slide">{% include 'common/system-item.html' %}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section equipment">
+  <div class="container">
+    <div class="section-top">
+      <h2 class="title">Оборудование</h2>
+    </div>
+    <div class="equipment-carousel">
+      <div class="carousel-arrow carousel-prev equipment-carousel__prev"></div>
+      <div class="carousel-arrow carousel-next equipment-carousel__next"></div>
+      <div class="carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">{% include 'common/equipment-item.html' %}</div>
+          <div class="swiper-slide">{% include 'common/equipment-item.html' %}</div>
+          <div class="swiper-slide">{% include 'common/equipment-item.html' %}</div>
+          <div class="swiper-slide">{% include 'common/equipment-item.html' %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

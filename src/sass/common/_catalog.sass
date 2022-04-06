@@ -1,0 +1,92 @@
+.catalog
+  .equipment-item
+    width: calc(100% / 2 - 30px)
+    margin: 30px 15px 0
+  .row-gap
+    margin-top: -30px
+  .catalog-item
+    width: calc(100% / 3 - 30px)
+    margin: 30px 15px 0
+
+  &-item
+    border: 1px solid #A5A5A5
+    padding: 10px
+    border-radius: 16px
+    position: relative
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2)
+    transition: .2s
+    &:hover
+      box-shadow: 0px 4px 40px rgba(0, 0, 0, .2)
+    h4
+      font-size: 36px
+      color: #5e717f
+      font-weight: 500
+      font-family: 'Montserrat'
+  &-img
+    height: 300px
+    border-radius: 6px
+    position: relative
+    overflow: hidden
+    margin-bottom: 10px
+    img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+    b
+      position: absolute
+      top: 20px
+      right: 0
+      padding: 4px 10px
+      background: #e9dc5a
+      font-size: 11px
+      font-weight: 700
+      font-family: 'Montserrat'
+      z-index: 10
+  &-status
+    position: relative
+    font-size: 14px
+    padding-left: 20px
+    margin-bottom: 10px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      width: 16px
+      height: 16px
+      background-repeat: no-repeat
+      background-position: center
+    &.stock
+      color: #82b662
+      &::before
+        background-image: url(../img/svg/stock.svg)
+    &.not
+      color: #d27979
+      &::before
+        background-image: url(../img/svg/not.svg)
+  &-title
+    color: #5e717f
+    font-weight: 700
+    font-family: 'Montserrat'
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 10
+  &-desc
+    margin: 10px 0
+  &-section
+    margin-top: 60px
+    h3
+      font-size: 36px
+      font-weight: 300
+      font-family: 'Montserrat'
+      margin-bottom: 30px
+    &:first-child
+      margin-top: 0

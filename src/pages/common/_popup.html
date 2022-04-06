@@ -1,0 +1,57 @@
+<div class="popup popup-big" id="popup-help">
+  <h2 class="title">Поможем вам подобрать решение</h2>
+  <h3>Оставьте заявку, мы свяжемся с вами в течение 30 минут и ответим на все вопросы</h3>
+  {% set form_btn = 'Помочь в выбором' %}
+  {% include 'common/big-form.html' %}
+</div>
+
+<div class="popup popup-big" id="popup-reserv">
+  <h2 class="title">Зарезервируйте товар</h2>
+  <h3>Мы свяжемся с вами в течение 30 минут и обсудим детали</h3>
+  {% set form_btn = 'Зарезервировать' %}
+  {% include 'common/big-form.html' %}
+</div>
+
+<div class="popup" id="popup-call">
+  <h2 class="title">Мы вам перезвоним</h2>
+  <h3>Пожалуйста, укажите контактные данные</h3>
+  <form action="#" class="popup-form">
+    <label class="label">
+      <small>Номер телефона</small>
+      <input type="tel" class="input masked" placeholder="+7 (___) ___-__-__" />
+    </label>
+    <label class="label">
+      <small>Комментарий</small>
+      <textarea class="textarea" placeholder="Напишите, что вас интересует?"></textarea>
+    </label>
+    <h4>В течение 30 минут с вами свяжется менеджер и ответит на все вопросы</h4>
+    <input type="hidden" name="nameform" value="Заказать звонок" />
+    <button class="btn btn-confetti">ЗАКАЗАТЬ ЗВОНОК</button>
+    <label class="checkbox">
+      <input type="checkbox" checked />
+      <p>Согласен на обработку персональных данных</p>
+    </label>
+  </form>
+</div>
+
+<div class="popup" id="popup-excursion">
+  <h2 class="title">Экскурсия на производство</h2>
+  <h3>Пожалуйста, укажите контактные данные</h3>
+  <form action="#" class="popup-form">
+    <label class="label">
+      <small>Номер телефона</small>
+      <input type="tel" class="input masked" placeholder="+7 (___) ___-__-__" />
+    </label>
+    <label class="label">
+      <small>Комментарий</small>
+      <textarea class="textarea" placeholder="Напишите, что вас интересует?"></textarea>
+    </label>
+    <h4>В течение 30 минут с вами свяжется менеджер и ответит на все вопросы</h4>
+    <input type="hidden" name="nameform" value="Экскурсия на производство" />
+    <button class="btn btn-confetti">ЗАКАЗАТЬ ЗВОНОК</button>
+    <label class="checkbox">
+      <input type="checkbox" checked />
+      <p>Согласен на обработку персональных данных</p>
+    </label>
+  </form>
+</div>

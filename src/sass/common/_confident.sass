@@ -1,0 +1,71 @@
+.confident
+  padding-bottom: 0
+  .container
+    position: inherit
+  &-slider
+    position: absolute
+    right: 0
+    left: 0
+    background: #eee
+    height: 670px
+    overflow: hidden
+    img
+      object-fit: cover
+      object-position: center
+      width: 100%
+      height: 100%
+    &__block
+      height: 670px
+  &-pagination
+    position: absolute
+    z-index: 10
+    bottom: 30px !important
+    @include flexbox
+    align-items: center
+    justify-content: center
+    .swiper-pagination-bullet
+      width: 10px
+      height: 10px
+      opacity: 1
+      background: transparent
+      border: 1px solid #fff
+      margin: 0 5px
+      &-active
+        background: #727272
+  &-content
+    padding: 50px 0
+    text-align: center
+    font-size: 18px
+    max-width: 1050px
+    margin: 0 auto
+    p
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+    .btn-wrap
+      justify-content: center
+      margin-top: 30px
+  &-numbers
+    padding: 5px 0 15px
+    text-align: center
+    background: url(../img/confident-numbers.jpg) no-repeat center
+    background-size: cover
+    .row
+      align-items: flex-start
+      justify-content: center
+    &__item
+      margin: 0 20px
+      width: 160px
+      h2
+        font-weight: 900
+        color: #f9b605
+        font-size: 65px
+        font-family: 'Montserrat'
+      h3
+        font-weight: 700
+        color: #3c3950
+        font-size: 19px
+        margin-bottom: 5px
+        font-family: 'Montserrat'
+      p
+        padding: 0 5px

@@ -1,0 +1,17 @@
+.build
+  background: url(../img/build.jpg) no-repeat center
+  background-size: cover
+  &-form
+    @include flexbox
+    align-items: flex-start
+    justify-content: space-between
+    max-width: 840px
+    width: 100%
+    margin: 0 auto
+    &__col
+      width: calc(100% / 2 - 15px)
+      &:last-child
+        width: 100%
+        @include flexbox
+        align-items: center
+        flex-direction: column

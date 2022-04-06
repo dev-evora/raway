@@ -1,0 +1,36 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Каталог товаров' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+    <h2 class="title">Каталог товаров</h2>
+  </div>
+</section>
+
+{% include 'common/cta.html' %}
+
+<section class="section catalog">
+  <div class="container">
+    <div class="row row-gap">
+      {% include 'common/equipment-item.html' %}
+      {% include 'common/equipment-item.html' %}
+      {% include 'common/equipment-item.html' %}
+      {% include 'common/equipment-item.html' %}
+      {% include 'common/equipment-item.html' %}
+    </div>
+  </div>
+</section>
+
+<section class="seo">
+  <div class="container">
+    <div class="seo-text">Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам... Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам...Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам...Некий Сеошный текст должен быть тут, тихо и незаметно он будет тут существовать и помогать сайту продвигаться к новым вершинам... </div>
+  </div>
+</section>
+
+{% endblock %}

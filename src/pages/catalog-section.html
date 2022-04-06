@@ -1,0 +1,31 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Раздел каталога' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+    <h2 class="title">Воздушные тепловые насосы</h2>
+  </div>
+</section>
+
+<section class="section catalog">
+  <div class="container">
+    <div class="row row-gap">
+      {% include 'common/catalog-item.html' %}
+      {% include 'common/catalog-item.html' %}
+      {% include 'common/catalog-item.html' %}
+      {% include 'common/catalog-item.html' %}
+      {% include 'common/catalog-item.html' %}
+      {% include 'common/catalog-item.html' %}
+    </div>
+  </div>
+</section>
+
+{% include 'common/cta.html' %}
+
+{% endblock %}

@@ -1,0 +1,30 @@
+<form action="#" class="build-form">
+  <div class="build-form__col">
+    <label class="label">
+      <small>Как к вам обращаться?</small>
+      <input type="text" class="input" placeholder="Введите имя" />
+    </label>
+    <label class="label">
+      <small>Номер телефона</small>
+      <input type="tel" class="input masked" placeholder="+7 (___) ___-__-__" />
+    </label>
+    <label class="label">
+      <small>E-mail</small>
+      <input type="email" class="input" placeholder="example@mail.com" />
+    </label>
+  </div>
+  <div class="build-form__col">
+    <label class="label">
+      <small>Комментарий</small>
+      <textarea class="textarea" placeholder="Напишите, что вас интересует?"></textarea>
+    </label>
+  </div>
+  <div class="build-form__col">
+    <input type="hidden" name="nameform" />
+    <button class="btn btn-confetti">{{ form_btn }}</button>
+    <label class="checkbox">
+      <input type="checkbox" checked />
+      <p>Согласен на обработку персональных данных</p>
+    </label>
+  </div>
+</form>

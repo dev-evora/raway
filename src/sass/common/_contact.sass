@@ -1,0 +1,63 @@
+.contact
+  padding-bottom: 80px
+  &-map
+    background: #eee
+    position: relative
+    height: 695px
+    border-radius: 12px
+    overflow: hidden
+    margin-bottom: 80px
+    & > ymaps
+      position: absolute
+      top: 0
+      left: 0
+      width: 100% !important
+      height: 100% !important
+    &__info
+      max-width: 410px
+      width: 100%
+      background: #727272
+      color: #fff
+      position: absolute
+      top: 0
+      right: 0
+      border-radius: 12px
+      padding: 30px
+      li
+        @include flexbox
+        align-items: center
+        margin-top: 30px
+        &:first-child
+          margin-top: 0
+        b
+          width: 45%
+        p
+          width: 55%
+  &-info
+    border-radius: 22px
+    border: 1px solid #DCDCDC
+    padding: 45px
+    width: 55%
+    font-size: 16px
+    .title
+      text-transform: none
+      margin-bottom: 40px
+    h3
+      font-size: 24px
+      font-weight: 700
+      font-family: 'Montserrat'
+      margin-top: 40px
+    ul
+      li
+        @include flexbox
+        align-items: center
+        margin-top: 20px
+        b
+          font-weight: 700
+          width: 40%
+        p
+          width: 60%
+
+  .popup
+    flex: 1
+    padding: 45px

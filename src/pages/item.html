@@ -1,0 +1,190 @@
+{% extends 'common/_layout.html' %}
+{% set site_title = 'Страница товара' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+    </ul>
+    <h3>Низкотемпературный воздушный тепловой насос НВТН 20</h3>
+  </div>
+</section>
+
+<section class="item">
+  <div class="container">
+    <div class="row">
+      <div class="item-left">
+        <div class="item-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="item-second__wrap">
+          <div class="carousel-arrow carousel-prev item-prev"></div>
+          <div class="carousel-arrow carousel-next item-next"></div>
+          <div class="item-second">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/item.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="item-download">
+          <h5>Файлы для скачивания</h5>
+          <ul>
+            <li><a href="#">Сертификат соответствия</a></li>
+            <li><a href="#">Технический паспорт PDF</a></li>
+            <li><a href="#">Инструкция использования PDF</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="item-right">
+        <div class="item-buy">
+          <div class="item-buy__wrap">
+            <h3>980 000 ₽</h3>
+            <div class="catalog-status stock">В наличии</div>
+            <!--<div class="catalog-status not">Нет в наличии</div>-->
+          </div>
+          <a href="javascript:;" data-fancybox data-src="#popup-reserv" class="btn btn-confetti">ЗАРЕЗЕРВИРОВАТЬ</a>
+        </div>
+        <ul class="item-bullets">
+          <li>Подходит для мест с холодным климатом</li>
+          <li>Не требует бурения скважин</li>
+          <li>Низкая потребляемая мощность</li>
+          <li>Удаленное управление</li>
+        </ul>
+        <h4>Основные характеристики</h4>
+        <ul class="item-spec">
+          <li>
+            <p>Работа без потери тепловой мощности<i></i><span class="item-spec__tooltip">Какой-то текст для тултипа, возможно даже очень длинный, а возможно и нет</span></p>
+            <b>до -30°С</b>
+          </li>
+          <li>
+            <p>Площадь обогрева<i></i><span class="item-spec__tooltip">Какой-то текст</span></p>
+            <b>200 м²</b>
+          </li>
+          <li>
+            <p>Максимальная температура нагрева </p>
+            <b>60 °С</b>
+          </li>
+          <li>
+            <p>Напряжение</p>
+            <b>380 В</b>
+          </li>
+          <li>
+            <p>Тепловая мощность</p>
+            <b>20 кВт</b>
+          </li>
+          <li>
+            <p>Управление</p>
+            <b>интернет</b>
+          </li>
+          <li>
+            <p>Габариты (внутренний блок) </p>
+            <b>700x700x2000 см</b>
+          </li>
+          <li>
+            <p>Габариты (наружный блок)</p>
+            <b>100x100x200 см</b>
+          </li>
+          <li>
+            <p>Тип теплового насоса</p>
+            <b>воздух - вода</b>
+          </li>
+          <li>
+            <p>Гарантия</p>
+            <b>2 года</b>
+          </li>
+          <li>
+            <p>Производитель</p>
+            <b>РАВЭЙ</b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="item">
+  <div class="container">
+    <div class="row">
+      <div class="item-left">
+        <ul class="item-content__list">
+          <li class="active" data-id="1">Подробное описание</li>
+          <li data-id="2">Доставка</li>
+          <li data-id="3">Оплата</li>
+        </ul>
+      </div>
+      <div class="item-right">
+        <div class="item-content active" data-id="1">
+          <h4 class="item-text__title">Подробное описание</h4>
+          <div class="item-text">
+            <p>Работает до — 25°С на улице (при более низкой температуре включается ТЭН)</p>
+            <p>Выдает 17-22 кВт тепловой энергии</p>
+            <p>Потребление электрической энергия от 3,5 до 12 кВт в зависимости от температуры окружающей среды</p>
+            <p>COP (Coefficient Of Perfomance) — от 1,7 до 4</p>
+            <p>Напряжение питания 380 В</p>
+            <p>Наличие гидромодуля с ТЭНом -20 кВт (опционально)</p>
+            <p>Дисплей 11 дюймов (Андроид)</p>
+            <p>Подключение мобильного телефона — Bluetooth</p>
+            <p>Внешний диаметр труб (рассол/ теплоноситель) — 1 1/4 дюйма внутренний диаметр</p>
+            <p>Хладагент — 410А</p>
+            <p>Объединение тепловых насосов (увеличение тепловой мощности) — до 127</p>
+            <p>Расширенный журнал ошибок — до 8 Гб</p>
+            <p>Отправка SMS, E-mail (при ошибках и неисправностях)</p>
+            <p>Контроль температуры в 12 точках устройства</p>
+            <p>Датчик протока теплоносителя  — 1 шт</p>
+            <p>Реле давления теплоносителя  — 1 шт</p>
+            <p>Проверка наличия контроля фаз</p>
+            <p>Датчик давления хладагента, высокая и низкая стороны — 2 шт</p>
+            <p>Встроенный насос</p>
+            <p>Плавный пуск</p>
+          </div>
+          <h4>Что потребуется дополнительно</h4>
+          <div class="item-text">
+            <p>аккумулятор тепла не менее 200л</p>
+            <p>группа безопасности (предохранительный клапан 3 бар, маномерт, воздухоотводчик) на контур отопления</p>
+            <p>гидроаккумулятор на контур отопления</p>
+            <p>теплоноситель (Пропиленгликоль)</p>
+          </div>
+        </div>
+        <div class="item-content" data-id="2">
+          <h4 class="item-text__title">Доставка</h4>
+          <div class="item-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consectetur voluptatem debitis voluptatum delectus suscipit laudantium placeat cumque, alias reprehenderit aut magni hic commodi repudiandae. Explicabo, assumenda culpa? Pariatur, ullam?</p>
+          </div>
+        </div>
+        <div class="item-content" data-id="3">
+          <h4 class="item-text__title">Оплата</h4>
+          <div class="item-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, consectetur voluptatem debitis voluptatum delectus suscipit laudantium placeat cumque, alias reprehenderit aut magni hic commodi repudiandae. Explicabo, assumenda culpa? Pariatur, ullam?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-block cta-block__item">
+      <div class="cta-block__wrap">
+        <h2>Не уверены, что этот товар подойдет?</h2>
+        <h3>Мы внимательно вас выслушаем, учтем все требования и предложим решение.<br> Закажите звонок, и мы свяжемся с вами в течение дня!</h3>
+      </div>
+      <a href="javascript:;" data-fancybox data-src="#popup-call" class="btn btn-gray">ЗАКАЗАТЬ ЗВОНОК</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

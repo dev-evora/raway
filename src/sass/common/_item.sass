@@ -1,0 +1,194 @@
+.item
+  padding-bottom: 80px
+  .row
+    align-items: flex-start
+  &-left
+    width: 520px
+  &-right
+    width: calc(100% - 520px - 60px)
+    margin-left: auto
+    h4
+      font-size: 24px
+      font-weight: 700
+      color: #5e717f
+      margin: 40px 0 20px
+      &:first-child
+        margin: 0
+  &-buy
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+    h3
+      font-size: 36px
+      font-weight: 500
+      font-family: 'Montserrat'
+      color: #5e717f
+      margin-bottom: 10px
+    .catalog-status
+      margin: 0
+  &-bullets
+    list-style: disc
+    font-size: 16px
+    line-height: 30px
+    padding: 15px
+    padding-left: 17px
+    position: relative
+    margin-top: 40px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      right: -30px
+      left: -30px
+      background: #efefef
+      border-radius: 12px
+      z-index: -1
+  &-spec
+    li
+      @include flexbox
+      align-items: center
+      margin-top: 20px
+      font-size: 16px
+      // position: relative
+      &:first-child
+        margin-top: 0
+      b
+        color: #5e717f
+        display: block
+        flex: 1
+        margin-left: 40px
+      p
+        width: 290px
+        position: relative
+      i
+        display: inline-block
+        width: 16px
+        height: 16px
+        background: url(../img/svg/tooltip.svg) no-repeat
+        border-radius: 100%
+        margin-left: 4px
+        cursor: pointer
+        &:hover + .item-spec__tooltip
+          display: block
+    &__tooltip
+      position: absolute
+      top: 100%
+      margin-top: 5px
+      left: 0
+      width: 290px
+      z-index: 10
+      background: #fff
+      border-radius: 5px
+      padding: 8px
+      box-shadow: 0 0 20px 5px rgba(0,0,0,.07)
+      font-size: 13px
+      display: none
+  &-text
+    font-size: 16px
+    line-height: 30px
+    &__title
+      margin-bottom: 20px !important
+      padding: 10px 15px
+      padding-left: 0
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        left: -30px
+        bottom: 0
+        border: 1px solid #D4D4D4
+        border-radius: 30px
+  &-content
+    display: none
+    &.active
+      display: block
+    &__list
+      li
+        // width: 240px
+        border: 1px solid #D4D4D4
+        border-radius: 30px
+        padding: 15px 0
+        padding-left: 40px
+        font-size: 16px
+        font-weight: 700
+        color: #5e717f
+        margin-top: 10px
+        cursor: pointer
+        position: relative
+        &:first-child
+          margin-top: 0
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 22px
+          bottom: 0
+          width: 8px
+          height: 12px
+          margin: auto 0
+          background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.52227 0L0 1.41L4.94467 6L0 10.59L1.52227 12L8 6L1.52227 0Z' fill='%235E717F'/%3E%3C/svg%3E%0A")
+        &.active
+          color: #e9dc5a
+          &::before
+            background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.52227 0L0 1.41L4.94467 6L0 10.59L1.52227 12L8 6L1.52227 0Z' fill='%23E9DC5A'/%3E%3C/svg%3E%0A");
+          
+  &-download
+    margin-top: 50px
+    h5
+      display: block
+      font-size: 18px
+      font-weight: 700
+      color: #5e717f
+    li
+      margin-top: 15px
+      position: relative
+      padding-left: 22px
+      transition: .2s
+      &::before
+        content: ''
+        position: absolute
+        top: 1px
+        left: 0
+        width: 16px
+        height: 16px
+        background: url(../img/svg/download.svg) no-repeat
+      &:hover
+        color: $color-confetti
+    ul
+      font-size: 16px
+  &-main
+    height: 530px
+    border-radius: 12px
+    overflow: hidden
+    border: 1px solid #a5a5a5
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+  &-second
+    margin-top: 30px
+    overflow: hidden
+    .swiper-slide
+      height: 80px
+      border-radius: 3px
+      overflow: hidden
+      border: 1px solid #A5A5A5
+      box-sizing: border-box
+    &__wrap
+      position: relative
+      padding: 0 70px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+
+.item + .cta + .footer
+  margin-top: 80px
+  padding: 45px 0
+  .footer-cta
+    display: none
