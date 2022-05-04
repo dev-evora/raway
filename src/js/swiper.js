@@ -112,3 +112,19 @@ if(item){
 		},
 	});	
 }
+
+systemPopup = document.querySelectorAll('.system-popup__img');
+if(systemPopup){
+	systemPopup.forEach((el) => {
+		var systemPopup = new Swiper(el,{
+			loop: true,
+			slidesPerView: 1,
+			observer: true,
+			observeParents: true,
+      navigation: {
+				nextEl: '.system-popup__next',
+				prevEl: '.system-popup__prev',
+			},
+		});
+	});
+}
